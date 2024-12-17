@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deploy website using VScode</title>
+  </head>
+  <body>
+    <h1>Steps to deploy website using VScode</h1>
+    <ol type="1">
+      <b>
+        <li>
+          Tạo repository trên github: dùng để lưu trữ dự án trên máy chủ git.
+        </li>
+        <li>
+          Tạo dự án trên máy tính cá nhân: dùng để code và lưu trữ cục bộ trên
+          máy tính.(ổ đĩa hỏng -> mất dữ liệu).
+        </li>
+        <li>
+          Khởi tạo git: để tạo 1 kho lưu trữ - Local repo
+          <ul>
+            <li>3.1: Mở terminal</li>
+            <li>3.2: config mặc định chọn git bash khi mở terminal</li>
+            <li>3.3: kiểm tra trạng thái git bằng lệnh ( git status )</li>
+            <li>
+              3.4: Để khởi tạo 1 kho lưu trữ git mới trên local ( git init ) sau
+              bước này đã có thư mục git để sẵn sàng lưu trữ thay đổi, nhưng
+              chưa có gì được theo dõi
+            </li>
+          </ul>
+        </li>
+        <li>Add thư mục dự án vào staging area chờ commit:
+            <ul>
+                <li>4.1: Add tất cả: ( git add . )</li>
+                <li>4.2: Add lẻ thư mục, tệp: ( git add ten_thu_muc )</li>
+            </ul>
+        </li>
+        <li>Commit và đẩy code lên github: ( git commit -m "first commit" )
+            <ul>
+                <li>5.1: git config --global user.email "ntt27112005@gmail.com"</li>
+                <li>5.2: git config --global user.name "thuat"</li>
+            </ul>
+        </li>
+        <li>git branch -M main: chuyển tên nhánh master sang main</li>
+        <li>git remote add origin https://github.com/trungthuat2711/du_an2.git</li>
+        <li>git push -u origin main</li>
+      </b>
+    </ol>
+  </body>
+</html>
